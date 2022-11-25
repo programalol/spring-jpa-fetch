@@ -1,5 +1,5 @@
 package com.jpajoinfetch.joinfetch.model;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -22,6 +22,7 @@ public class Libro {
     @Column(name="id_libro")
     private Long id;
     private String titulo;
-    private LocalDate fechaPublicacion;
+    @Column(name = "fecha_publicacion")
+    private LocalDateTime fechaPublicacion;
     
 }
